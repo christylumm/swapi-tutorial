@@ -1,39 +1,28 @@
 let button = document.querySelector('#button');
-let character = document.querySelector('#name');
-let film1 = document.querySelector('#film1');
-let film2 = document.querySelector('#film2'); 
-let film3 = document.querySelector('#film3');
-let film4 = document.querySelector('#film4');
+let character = document.querySelector('#character');
+let height = document.querySelector('#height');
+let mass = document.querySelector('#mass');
+let hair_color = document.querySelector('#hair_color');
+let eye_color = document.querySelector('#eye_color');
+let birth_year = document.querySelector('#birth_year');
 
-let ep3 = 'http://swapi.dev/api/films/6/';
-let ep4 = 'http://swapi.dev/api/films/1/';
-let ep5 = 'http://swapi.dev/api/films/2/';
-let ep6 = 'http://swapi.dev/api/films/3/';
+function getData() {
+  let randomNumber = Math.floor((Math.random() * 82) + 1);
 
-function findLuke() {
-  axios.get('http://swapi.dev/api/people/1/').then(function(response) {
-    updateLuke(response.data)
+  let apiURL = 'http://swapi.dev/api/people/' + randomNumber;
+
+  axios.get(apiURL).then(function(response) {
+    updateInfo(response.data)
   })
 }
 
-function updateLuke(data) {
-  character.innerText = data.name;
-
-  if (data.films[0] === ep4) {
-    film1.innerText = "Episode IV: A New Hope"
-  }
-  
-  if (data.films[1] === ep5) {
-    film2.innerText = "Episode V: The Empire Strikes Back"
-  }
-  
-  if (data.films[2] === ep6) {
-    film3.innerText = "Episode VI: Return of the Jedi"
-  }
-  
-  if (data.films[3] === ep3) {
-    film4.innerText = "Episode III: Revenge of the Sith"
-  }
+function updateInfo(data) {
+  character.innerText = data.name
+  height.innerText = `Height: ${data.height}`
+  mass.innerText = `Mass: ${data.mass}`
+  hair_color.innerText = `Hair Color: ${data.hair_color}`
+  eye_color.innerText = `Eye Color: ${data.eye_color}`
+  birth_year.innerText = `Birth Year: ${data.birth_year}`
 }
 
-button.addEventListener('click', findLuke)
+button.addEventListener('click', getData)
