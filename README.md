@@ -9,7 +9,7 @@ In order to utilize SWAPI, this tutorial will address the following topics:
 * Finding Films with Luke Skywalker
 * Use the API to build a Star Wars Character Generator app
 
-![Character Generator Screenshot](https://raw.githubusercontent.com/christylumm/swapi-tutorial/master/img/swapi-generator.png?token=APY6ZIVNXYGEVYTDIQJZM2DAKD6O4 "Character Generator Screenshot")
+![Character Generator Screenshot](https://raw.githubusercontent.com/christylumm/swapi-tutorial/master/img/swapi-generator.png?token=APY6ZIRFPB3JFCXLFTWPYWLAKED4O "Character Generator Screenshot")
 
 ## How to use SWAPI
 Being a public REST API, no authentication is required to query and get the data. To retrieve the information from the database through an HTTP request, you must use a GET request. Using cURL, httpie, postman or other data transfer tools, you can transfer data through HTTP requests. 
