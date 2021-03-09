@@ -1,7 +1,7 @@
 # Star Wars API Tutorial
 
 ## What is SWAPI?
-The [Star Wars Open API](https://swapi.dev/) is the world's first quantified and programmatically-formatted set of accessible data from the Star Wars films. Formatted in JSON, this data allows you to programmatically collect and measure the data. The data set contains sets of information about the **Films**, as well as thorough breakdowns of all the **People**, **Species**, **Starships**, **Vehicles**, and **Planets** known in the Star WArs University 
+The [Star Wars Open API](https://swapi.dev/) is the world's first quantified and programmatically-formatted set of accessible data from the Star Wars films. Formatted in JSON, this data allows you to programmatically collect and measure the data. The data set contains sets of information about the **Films**, as well as thorough breakdowns of all the **People**, **Species**, **Starships**, **Vehicles**, and **Planets** known in the Star Wars universe. 
 
 ## Additional Info
 In order to utilize SWAPI, this tutorial will address the following topics:
@@ -12,7 +12,7 @@ In order to utilize SWAPI, this tutorial will address the following topics:
 ![Character Generator Screenshot](https://raw.githubusercontent.com/christylumm/swapi-tutorial/master/img/swapi-generator.png?token=APY6ZIRFPB3JFCXLFTWPYWLAKED4O "Character Generator Screenshot")
 
 ## How to use SWAPI
-Being a public REST API, no authentication is required to query and get the data. To retrieve the information from the database through an HTTP request, you must use a GET request. Using cURL, httpie, postman or other data transfer tools, you can transfer data through HTTP requests. 
+Being a public REST API, no authentication is required to query and get the data. To retrieve the information from the database through an HTTP request, you must use a `GET` request. Using cURL, [httpie](https://httpie.io/), [Postman](https://www.postman.com/) or other data transfer tools, you can transfer data through HTTP requests. 
 
 Any request will be made using SWAPI's Base URL:
 `https://swapi.dev/api/`
