@@ -145,7 +145,7 @@ Clicking the "Generate Character" button will now generate a random Star Wars ch
 
 For example, writing `data.birthYear` will not work since the API lists the birth year as `birth_year`. The correct way to access this data is `data.birth_year`. 
 
-The full code for this project is available in this repo.
+The full code for this project is available in [this repo](https://github.com/christylumm/swapi-tutorial).
 
 ## Wrap Up
 With close to an instant response, the Star Wars API offers many possibilities for populating your own apps and testing app functionality with Star Wars data like moves, actors, characters, and vehicles. 
